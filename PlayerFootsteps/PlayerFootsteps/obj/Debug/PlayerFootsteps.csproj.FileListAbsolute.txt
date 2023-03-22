@@ -1,0 +1,12 @@
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.pdb
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\0Harmony.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\Assembly-CSharp.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\BepInEx.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.Networking.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csprojAssemblyReference.cache
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CoreCompileInputs.cache
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CopyComplete
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.dll
+C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.pdb
