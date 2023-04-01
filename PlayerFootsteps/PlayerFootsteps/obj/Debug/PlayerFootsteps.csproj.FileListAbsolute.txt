@@ -10,3 +10,15 @@ C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\Play
 C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CopyComplete
 C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.dll
 C:\Users\kacpe\Desktop\Anothermod\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.pdb
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.pdb
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\Assembly-CSharp.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\BepInEx.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.Networking.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\0Harmony.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csprojAssemblyReference.cache
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CoreCompileInputs.cache
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CopyComplete
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.dll
+D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.pdb

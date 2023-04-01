@@ -14,12 +14,12 @@ namespace PlayerFootsteps
     public class PlayerFootsteps : BaseUnityPlugin
     {
         private ConfigEntry<bool> AIDetectsSounds;
+        private ConfigEntry<bool> MeatyFeet;
         private ConfigEntry<float> AIDetectionSoundsMultiplier;
         private ConfigEntry<float> PlayerHeight;
         private ConfigEntry<float> PlayerCrouchHeight;
         private ConfigEntry<float> SoundVolume;
         
-
         private Dictionary<string, AudioClip> _audioClips = new Dictionary<string, AudioClip>();
 
         private Vector3 _lastPlayerPos;
@@ -28,6 +28,9 @@ namespace PlayerFootsteps
         private bool _initialized;
         private float _lastHitDistance;
         private float _stepTimer;
+
+        // Prefab needed to access meaty footsteps sounds
+        private Sosig _sosigPrefab;
 
         private void Awake()
         {
@@ -38,6 +41,7 @@ namespace PlayerFootsteps
             DontDestroyOnLoad(gameObject);
             
             AIDetectsSounds = Config.Bind("FootstepsSounds", "AIDetectsSounds", true, "If enabled, AI will detect player footsteps based on ground material and the player speed.");
+            MeatyFeet = Config.Bind("FootstepsSounds", "MeatyFeet", false, "If enabled, replaces footsteps sounds with meaty footstep sounds.");
             AIDetectionSoundsMultiplier = Config.Bind("FootstepsSounds", "AIDetectionSoundsMultiplier", 1f, "Multiplier for AI detection range based on player speed.");
             PlayerHeight = Config.Bind("FootstepsSounds", "PlayerHeight", 1.8f, "Player height in meters. If head is higher than this value, the player is considered flying and will not produce footsteps sounds.");
             PlayerCrouchHeight = Config.Bind("FootstepsSounds", "PlayerCrouchHeight", 1.25f, "If player head is lower than this value, the player is considered crouching and will not be detected by AI.");
@@ -56,6 +60,9 @@ namespace PlayerFootsteps
             _lastPlayerPos = GM.CurrentPlayerBody.Head.transform.position;
 
             LoadAudioClips();
+            
+            if (MeatyFeet.Value)
+                _sosigPrefab = IM.Instance.odicSosigObjsByID[SosigEnemyID.M_Swat_Heavy].SosigPrefabs[0].GetGameObject().GetComponent<Sosig>();
 
             _initialized = true;
         }
@@ -77,6 +84,7 @@ namespace PlayerFootsteps
             _audioClips["Rock.wav"] = null;
             _audioClips["Ice.wav"] = null;
             _audioClips["Glass.wav"] = null;
+            _audioClips["SnowNorthestDakota.wav"] = null;
             
             string pathToSounds = Paths.PluginPath + @"\Kodeman-PlayerFootsteps\";
             
@@ -93,7 +101,9 @@ namespace PlayerFootsteps
             
             // Throttle footsteps, otherwise it will sound like player has very short legs.
             _stepTimer += Time.deltaTime;
-            if (_stepTimer < .22f)
+            if (_stepTimer < .23f)
+                return;
+            if (MeatyFeet.Value && _stepTimer < 0.3)
                 return;
             
             // Ignore Y position when calculating distance
@@ -111,7 +121,7 @@ namespace PlayerFootsteps
                 {
                     _stepTimer = 0;
                     _lastHitDistance = hit.distance;
-
+                    
                     if (hit.collider.GetComponent<PMat>())
                     {
                         BulletImpactSoundType soundType = hit.collider.GetComponent<PMat>().MatDef.BulletImpactSound;
@@ -119,13 +129,13 @@ namespace PlayerFootsteps
                     }
                     else // Play generic sound if no PMat is found
                     {
-                        PlayFootstepSound(BulletImpactSoundType.Generic);
+                        PlayFootstepSound(BulletImpactSoundType.Generic, true);
                     }
                 }
             }
         }
 	
-        private void PlayFootstepSound(BulletImpactSoundType soundType)
+        private void PlayFootstepSound(BulletImpactSoundType soundType, bool noPMat = false)
         {
             float playerSpeed = GM.CurrentMovementManager.GetTopSpeedInLastSecond();
             float speedVolumeAdd = RemapClamped(playerSpeed, 3f, 7f, 0f, 0.35f);
@@ -146,9 +156,27 @@ namespace PlayerFootsteps
 
             _audioSource.volume = volume;
             _audioSource.pitch = pitch;
-
-            HandleAIDetection();
             
+            HandleAIDetection();
+
+            // Replace footsteps sounds with meaty footsteps sounds
+            if (MeatyFeet.Value)
+            {
+                _audioSource.pitch = Random.Range(0.95f, 1.05f);
+                _audioSource.volume *= 0.6f;
+                
+                int random = Random.Range(0, _sosigPrefab.AudEvent_FootSteps.Clips.Count);
+                _audioSource.PlayOneShot(_sosigPrefab.AudEvent_FootSteps.Clips[random]);
+ 
+                return;
+            }
+            
+            if (noPMat && GM.TNH_Manager && GM.TNH_Manager.LevelName == "NorthestDakota")
+            {
+                _audioSource.PlayOneShot(_audioClips["SnowNorthestDakota.wav"]);
+                return;
+            }
+
             switch (soundType)
             {
                 case BulletImpactSoundType.Grass:
