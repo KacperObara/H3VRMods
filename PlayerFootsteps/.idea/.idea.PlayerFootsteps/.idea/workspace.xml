@@ -33,6 +33,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/78/b27e4104/GM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/78/b74de1ee/SosigEnemyTemplate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/79/6409e3b6/SosigSpeechSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/7f/0131ee09/TNH_HoldPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/88/6130d65d/IM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/96/3216c7aa/SosigConfigTemplate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/96/c88026e0/TNH_Phase.cs" root0="SKIP_HIGHLIGHTING" />
@@ -45,6 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/b2/a6bb5139/FVRSceneSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/cb/f674c7bf/SosigSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/d2/bc2255c1/SM.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/d3/8040b3e6/TNHSetting_ProgressionType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/da/474d0d14/SosigEnemyCategory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/da/f9707306/ZosigEnemySpawnZone.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f1/423fa850/SosigEnemyID.cs" root0="SKIP_HIGHLIGHTING" />
@@ -191,6 +193,11 @@
       <workItem from="1680117407191" duration="680000" />
       <workItem from="1680158379820" duration="561000" />
       <workItem from="1680192336174" duration="23000" />
+      <workItem from="1680335364913" duration="966000" />
+      <workItem from="1682366823175" duration="865000" />
+      <workItem from="1682451490182" duration="84000" />
+      <workItem from="1682588507267" duration="21000" />
+      <workItem from="1682627507894" duration="499000" />
     </task>
     <servers />
   </component>

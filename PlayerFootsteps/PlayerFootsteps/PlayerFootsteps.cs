@@ -15,10 +15,12 @@ namespace PlayerFootsteps
     {
         private ConfigEntry<bool> AIDetectsSounds;
         private ConfigEntry<bool> MeatyFeet;
+        private ConfigEntry<bool> QuietWalking;
         private ConfigEntry<float> AIDetectionSoundsMultiplier;
         private ConfigEntry<float> PlayerHeight;
         private ConfigEntry<float> PlayerCrouchHeight;
         private ConfigEntry<float> SoundVolume;
+        private ConfigEntry<float> QuietWalkingSpeed;
         
         private Dictionary<string, AudioClip> _audioClips = new Dictionary<string, AudioClip>();
 
@@ -26,7 +28,7 @@ namespace PlayerFootsteps
         private AudioSource _audioSource;
 
         private bool _initialized;
-        private float _lastHitDistance;
+        private float _lastHitDistFromHead;
         private float _stepTimer;
 
         // Prefab needed to access meaty footsteps sounds
@@ -46,6 +48,8 @@ namespace PlayerFootsteps
             PlayerHeight = Config.Bind("FootstepsSounds", "PlayerHeight", 1.8f, "Player height in meters. If head is higher than this value, the player is considered flying and will not produce footsteps sounds.");
             PlayerCrouchHeight = Config.Bind("FootstepsSounds", "PlayerCrouchHeight", 1.25f, "If player head is lower than this value, the player is considered crouching and will not be detected by AI.");
             SoundVolume = Config.Bind("FootstepsSounds", "SoundVolume", 1f, "Volume of footsteps sounds. Value range is 0-1");
+            QuietWalking = Config.Bind("FootstepsSounds", "QuietWalking", false, "If enabled, player will not alert sosigs when walking slowly without crouching.");
+            QuietWalkingSpeed = Config.Bind("FootstepsSounds", "QuietWalkingSpeed", 2f, "If QuietWalking is enabled, walking slower than this value will not alert sosigs.");
             
             SoundVolume.Value = Mathf.Clamp(SoundVolume.Value, 0f, 1f);
             
@@ -120,7 +124,7 @@ namespace PlayerFootsteps
                 if (Physics.Raycast(GM.CurrentPlayerBody.Head.position, Vector3.down, out RaycastHit hit, PlayerHeight.Value, 1 << 19))
                 {
                     _stepTimer = 0;
-                    _lastHitDistance = hit.distance;
+                    _lastHitDistFromHead = hit.distance;
                     
                     if (hit.collider.GetComponent<PMat>())
                     {
@@ -147,11 +151,15 @@ namespace PlayerFootsteps
             if (playerSpeed > 4.25f)
                 volume = 1;
             
+            bool isPlayerWalkingSlowly = QuietWalking.Value && playerSpeed < QuietWalkingSpeed.Value;
+            
             // Reduce volume if player is crouching
-            if (_lastHitDistance <= PlayerCrouchHeight.Value)
+            if (_lastHitDistFromHead <= PlayerCrouchHeight.Value)
                 volume -= 0.4f;
-            
-            
+            // Reduce volume if player is walking slowly
+            else if (isPlayerWalkingSlowly)
+                volume -= 0.25f;
+
             volume *= SoundVolume.Value;
 
             _audioSource.volume = volume;
@@ -247,7 +255,8 @@ namespace PlayerFootsteps
             float playerSpeed = GM.CurrentMovementManager.GetTopSpeedInLastSecond();
             
             bool isPlayerRunning = playerSpeed > 4.25f;
-            bool isPlayerCrouching = _lastHitDistance <= 1.25f;
+            bool isPlayerCrouching = _lastHitDistFromHead <= 1.25f;
+            bool isPlayerWalkingSlowly = QuietWalking.Value && playerSpeed < QuietWalkingSpeed.Value;
             
             Vector3 playerPos = GM.CurrentPlayerBody.Head.transform.position;
             int playerIff = GM.CurrentPlayerBody.GetPlayerIFF();
@@ -263,7 +272,8 @@ namespace PlayerFootsteps
 
             maxDistanceHeard *= AIDetectionSoundsMultiplier.Value;
 
-            if ((!isPlayerCrouching || isPlayerRunning) && GM.CurrentAIManager)
+            
+            if ((!isPlayerCrouching || isPlayerRunning) && !isPlayerWalkingSlowly && GM.CurrentAIManager)
                 GM.CurrentAIManager.SonicEvent(GM.CurrentSceneSettings.BaseLoudness, maxDistanceHeard, playerPos, playerIff);
         }
 
