@@ -26,6 +26,8 @@ You can customize:
 
 
 # Changelog
+### 1.0.3  
+- The footsteps will now work if You're using Navblock as a walking surface in Your map.  
 
 ### 1.0.2  
 - Quiet walking option, allows You to sneak without the need to crouch

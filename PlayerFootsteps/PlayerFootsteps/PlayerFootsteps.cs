@@ -121,7 +121,7 @@ namespace PlayerFootsteps
             {
                 _lastPlayerPos = playerPos;
 
-                if (Physics.Raycast(GM.CurrentPlayerBody.Head.position, Vector3.down, out RaycastHit hit, PlayerHeight.Value, 1 << 19))
+                if (Physics.Raycast(GM.CurrentPlayerBody.Head.position, Vector3.down, out RaycastHit hit, PlayerHeight.Value, 1 << 19 | 1 << 12)) // environment layer and navblock
                 {
                     _stepTimer = 0;
                     _lastHitDistFromHead = hit.distance;

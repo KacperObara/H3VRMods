@@ -22,33 +22,46 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0c/96082ec2/FVRPlayerBody.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/19/4c28a367/FVRMovementManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/22/f91878a0/TNH_ObjectConstructor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/26/c544ceca/EquipmentPoolDef.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/28/d1ab8e09/FVRPooledAudioType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/29/52fc06fd/FVRFireArm.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/2b/206f4a7a/FVRFireArmRound.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/36/8c46472a/FVRPooledAudioPrefabDirectory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/3b/993e0286/ObjectTableDef.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/43/c44a4d2b/IListExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/47/ea48753e/PoolTypePrefabBinding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/51/2a7cc875/TNH_CharacterDef.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/55/d1683645/AIManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/5c/b5455e2e/TNH_Manager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/5d/02accf16/AIEntity.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/78/b27e4104/GM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/78/b74de1ee/SosigEnemyTemplate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/79/6409e3b6/SosigSpeechSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/7c/5cc968b5/FVRObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/7f/0131ee09/TNH_HoldPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/80/1dee96fb/TNH_HealthMult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/88/6130d65d/IM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/96/3216c7aa/SosigConfigTemplate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/96/c88026e0/TNH_Phase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/98/19c205e3/PM.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/98/d4773356/TNH_SupplyPoint.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/9b/239d4f45/AudioBulletImpactSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/a0/309fe581/GronchCorpseSpawner.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/a0/96b04b44/AttachableFirearm.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/a3/29b64ddd/TNH_ItemSpawnerMode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/a9/c35c96f0/TNH_CharacterDatabase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/af/3912b87b/TNH_TurretType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/b0/38b0c275/AudioEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/b2/a6bb5139/FVRSceneSettings.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/bb/a5d91735/TNH_TakeChallenge.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/cb/f674c7bf/SosigSpawner.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/d0/68cb356b/ObjectTable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/d2/bc2255c1/SM.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/d3/8040b3e6/TNHSetting_ProgressionType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/da/474d0d14/SosigEnemyCategory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/da/f9707306/ZosigEnemySpawnZone.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/ed/9042a629/AnvilManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f1/423fa850/SosigEnemyID.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f2/9cd3f3b6/AudioImpactSet.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f5/bf20f16c/Sosig.cs" root0="SKIP_HIGHLIGHTING" />
@@ -198,6 +211,8 @@
       <workItem from="1682451490182" duration="84000" />
       <workItem from="1682588507267" duration="21000" />
       <workItem from="1682627507894" duration="499000" />
+      <workItem from="1683113460382" duration="442000" />
+      <workItem from="1683115724907" duration="1537000" />
     </task>
     <servers />
   </component>
