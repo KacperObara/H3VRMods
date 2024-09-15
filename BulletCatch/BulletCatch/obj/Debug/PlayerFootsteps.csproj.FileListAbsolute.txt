@@ -22,15 +22,3 @@ D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\o
 D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CopyComplete
 D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.dll
 D:\Stuff I cant keep on C drive\repos\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.pdb
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\PlayerFootsteps.pdb
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\Assembly-CSharp.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\BepInEx.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\UnityEngine.Networking.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\bin\Debug\0Harmony.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.AssemblyReference.cache
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CoreCompileInputs.cache
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.csproj.CopyComplete
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.dll
-C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\obj\Debug\PlayerFootsteps.pdb

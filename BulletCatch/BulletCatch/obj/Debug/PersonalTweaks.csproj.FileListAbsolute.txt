@@ -1,0 +1,12 @@
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\PersonalTweaks.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\PersonalTweaks.pdb
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\0Harmony.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\Assembly-CSharp.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\BepInEx.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\UnityEngine.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\bin\Debug\UnityEngine.Networking.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\obj\Debug\PersonalTweaks.csproj.AssemblyReference.cache
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\obj\Debug\PersonalTweaks.csproj.CoreCompileInputs.cache
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\obj\Debug\PersonalTweaks.csproj.CopyComplete
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\obj\Debug\PersonalTweaks.dll
+C:\Projects\Unity\H3VRMods\BulletCatch\PersonalTweaks\obj\Debug\PersonalTweaks.pdb

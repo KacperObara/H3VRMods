@@ -3,4 +3,7 @@
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Ckacpe_005CDesktop_005CAnothermod_005CPlayerFootsteps2_005CPlayerFootsteps2_005Clibs_005CAssembly_002DCSharp_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Ckacpe_005CDesktop_005CAnothermod_005CPlayerFootsteps2_005CPlayerFootsteps2_005Clibs_005CBepInEx_002Edll/@EntryIndexedValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Ckacpe_005CDesktop_005CAnothermod_005CPlayerFootsteps2_005CPlayerFootsteps2_005Clibs_005CUnityEngine_002Edll/@EntryIndexedValue">True</s:Boolean>
-	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Ckacpe_005CDesktop_005CAnothermod_005CPlayerFootsteps2_005CPlayerFootsteps2_005Clibs_005CUnityEngine_002ENetworking_002Edll/@EntryIndexedValue">True</s:Boolean></wpf:ResourceDictionary>
+	<s:Boolean x:Key="/Default/AddReferences/RecentPaths/=C_003A_005CUsers_005Ckacpe_005CDesktop_005CAnothermod_005CPlayerFootsteps2_005CPlayerFootsteps2_005Clibs_005CUnityEngine_002ENetworking_002Edll/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Projects\Unity\H3VRMods\PlayerFootsteps\PlayerFootsteps\libs\Assembly-CSharp.dll" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String></wpf:ResourceDictionary>

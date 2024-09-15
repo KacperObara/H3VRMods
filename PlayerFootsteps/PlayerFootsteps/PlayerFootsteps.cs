@@ -1,5 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using BepInEx;
 using BepInEx.Configuration;
 using FistVR;
@@ -9,7 +12,13 @@ using Random = UnityEngine.Random;
 
 namespace PlayerFootsteps
 {
-    [BepInPlugin("h3vr.kodeman.playerfootsteps", "Player Footsteps", "1.0.0")]
+    public class AudioData
+    {
+        public string Name;
+        public List<AudioClip> Clips;
+    }
+    
+    [BepInPlugin("h3vr.kodeman.playerfootsteps", "Player Footsteps", "1.0.4")]
     [BepInProcess("h3vr.exe")]
     public class PlayerFootsteps : BaseUnityPlugin
     {
@@ -22,7 +31,7 @@ namespace PlayerFootsteps
         private ConfigEntry<float> SoundVolume;
         private ConfigEntry<float> QuietWalkingSpeed;
         
-        private Dictionary<string, AudioClip> _audioClips = new Dictionary<string, AudioClip>();
+        private List<AudioData> _audioClips = new List<AudioData>();
 
         private Vector3 _lastPlayerPos;
         private AudioSource _audioSource;
@@ -63,39 +72,12 @@ namespace PlayerFootsteps
             
             _lastPlayerPos = GM.CurrentPlayerBody.Head.transform.position;
 
-            LoadAudioClips();
+            LoadAllAudioClips();
             
             if (MeatyFeet.Value)
                 _sosigPrefab = IM.Instance.odicSosigObjsByID[SosigEnemyID.M_Swat_Heavy].SosigPrefabs[0].GetGameObject().GetComponent<Sosig>();
 
             _initialized = true;
-        }
-        
-        private void LoadAudioClips()
-        {
-            _audioClips.Clear();
-
-            _audioClips["Concrete.wav"] = null;
-            _audioClips["Grass.wav"] = null;
-            _audioClips["Gravel.wav"] = null;
-            _audioClips["Metal.wav"] = null;
-            _audioClips["Mud.wav"] = null;
-            _audioClips["SoftMaterial.wav"] = null;
-            _audioClips["Water.wav"] = null;
-            _audioClips["Wood.wav"] = null;
-            _audioClips["Sand.wav"] = null;
-            _audioClips["Brick.wav"] = null;
-            _audioClips["Rock.wav"] = null;
-            _audioClips["Ice.wav"] = null;
-            _audioClips["Glass.wav"] = null;
-            _audioClips["SnowNorthestDakota.wav"] = null;
-            
-            string pathToSounds = Paths.PluginPath + @"\Kodeman-PlayerFootsteps\";
-            
-            foreach(KeyValuePair<string, AudioClip> clip in _audioClips)
-            {
-                StartCoroutine(GetAudioClip(pathToSounds + clip.Key, clip.Key));
-            }
         }
 
         private void Update()
@@ -181,70 +163,98 @@ namespace PlayerFootsteps
             
             if (noPMat && GM.TNH_Manager && GM.TNH_Manager.LevelName == "NorthestDakota")
             {
-                _audioSource.PlayOneShot(_audioClips["SnowNorthestDakota.wav"]);
+                PlayAudio("SnowNorthestDakota");
                 return;
             }
 
             switch (soundType)
             {
                 case BulletImpactSoundType.Grass:
-                    _audioSource.PlayOneShot(_audioClips["Grass.wav"]);
+                    PlayAudio("Grass");
                     break;
                 case BulletImpactSoundType.WoodHeavy:
+                    PlayAudio("WoodHeavy");
+                    break;
                 case BulletImpactSoundType.WoodLight:
                 case BulletImpactSoundType.WoodProp:
-                    _audioSource.PlayOneShot(_audioClips["Wood.wav"]);
+                    PlayAudio("WoodLight");
                     break;
                 case BulletImpactSoundType.Gravel:
-                    _audioSource.PlayOneShot(_audioClips["Gravel.wav"]);
+                    PlayAudio("Gravel");
                     break;
                 case BulletImpactSoundType.Mud:
+                    PlayAudio("Mud");
+                    break;
                 case BulletImpactSoundType.Meat:
-                    _audioSource.PlayOneShot(_audioClips["Mud.wav"]);
+                    PlayAudio("Meat");
                     break;
                 case BulletImpactSoundType.Water:
-                    _audioSource.PlayOneShot(_audioClips["Water.wav"]);
+                    PlayAudio("Water");
                     break;
                 case BulletImpactSoundType.SoftMaterial:
-                    _audioSource.PlayOneShot(_audioClips["SoftMaterial.wav"]);
+                    PlayAudio("SoftMaterial");
                     break;
                 case BulletImpactSoundType.Sand:
                 case BulletImpactSoundType.Sandbag:
-                    _audioSource.PlayOneShot(_audioClips["Sand.wav"]);
+                    PlayAudio("Sand");
+                    break;
+                case BulletImpactSoundType.MetalThick:
+                    PlayAudio("MetalThick");
                     break;
                 case BulletImpactSoundType.MetalRicochetee:
-                case BulletImpactSoundType.MetalThick:
                 case BulletImpactSoundType.MetalThin:
                 case BulletImpactSoundType.ArmorHard:
                 case BulletImpactSoundType.ArmorSoft:
-                    _audioSource.PlayOneShot(_audioClips["Metal.wav"]);
+                    PlayAudio("MetalThin");
                     break;
                 case BulletImpactSoundType.Brick:
-                    _audioSource.PlayOneShot(_audioClips["Brick.wav"]);
+                    PlayAudio("Brick");
                     break;
                 case BulletImpactSoundType.Rock:
-                    _audioSource.PlayOneShot(_audioClips["Rock.wav"]);
+                    PlayAudio("Rock");
                     break;
                 case BulletImpactSoundType.Ice:
-                    _audioSource.PlayOneShot(_audioClips["Ice.wav"]);
+                    PlayAudio("Ice");
                     break;
                 case BulletImpactSoundType.Glass:
                 case BulletImpactSoundType.GlassBulletProof:
                 case BulletImpactSoundType.GlassShattery:
                 case BulletImpactSoundType.GlassWindshield:
-                    _audioSource.PlayOneShot(_audioClips["Glass.wav"]);
+                    PlayAudio("Glass");
                     break;
                 case BulletImpactSoundType.None:
                     break;
                 case BulletImpactSoundType.Concrete:
+                    PlayAudio("Concrete");
+                    break;
                 case BulletImpactSoundType.Generic:
                 case BulletImpactSoundType.Plaster:
                 case BulletImpactSoundType.Plastic:
                 case BulletImpactSoundType.ZWhooshes:
                 default:
-                    _audioSource.PlayOneShot(_audioClips["Concrete.wav"]);
+                    PlayAudio("Generic");
                     break;
             }
+        }
+
+        private void PlayAudio(string clipName)
+        {
+            AudioClip randomClip = GetRandomAudio(clipName);
+            _audioSource.PlayOneShot(randomClip);
+        }
+
+        private AudioClip GetRandomAudio(string clipName)
+        {
+            for (int i = 0; i < _audioClips.Count; i++)
+            {
+                if (_audioClips[i].Name == clipName)
+                {
+                    int randomIndex = Random.Range(0, _audioClips[i].Clips.Count);
+                    return _audioClips[i].Clips[randomIndex];
+                }
+            }
+
+            throw new System.Exception($"Audio clip {clipName} not found");
         }
 
         private void HandleAIDetection()
@@ -272,12 +282,59 @@ namespace PlayerFootsteps
 
             maxDistanceHeard *= AIDetectionSoundsMultiplier.Value;
 
-            
+
             if ((!isPlayerCrouching || isPlayerRunning) && !isPlayerWalkingSlowly && GM.CurrentAIManager)
-                GM.CurrentAIManager.SonicEvent(GM.CurrentSceneSettings.BaseLoudness, maxDistanceHeard, playerPos, playerIff);
+            {
+                try
+                {
+                    GM.CurrentAIManager.SonicEvent(GM.CurrentSceneSettings.BaseLoudness, maxDistanceHeard, playerPos, playerIff);
+                    //GM.CurrentAIManager.SonicEvent(GM.CurrentSceneSettings.BaseLoudness, maxDistanceHeard, playerPos, playerIff, GM.CurrentPlayerBody.PlayerEntities[0]);
+                }
+                catch (Exception e)
+                {
+                   Debug.LogError("Sound detection failed, You're probably using unsupported version of player footsteps.");
+                }
+            }
+        }
+        
+        private void LoadAllAudioClips()
+        {
+            _audioClips.Clear();
+
+            string[] materials = { "Concrete", "Generic", "Grass", "Gravel", "MetalThick", "MetalThin", "Mud", "Meat", "SoftMaterial", "Water", "WoodHeavy", "WoodLight", "Sand", "Brick", "Rock", "Ice", "Glass", "SnowNorthestDakota" };
+            string pathToDefaultSounds = Paths.PluginPath + @"\Kodeman-PlayerFootsteps\";
+            string pathToPlugins = Paths.PluginPath;
+            
+            foreach (var mat in materials)
+            {
+                List<string> footsteps = Directory.GetFiles(pathToPlugins, $"PlayerFootsteps_{mat}*.wav", SearchOption.AllDirectories).ToList();
+                
+                AudioData data = new AudioData
+                {
+                    Name = mat,
+                    Clips = new List<AudioClip>()
+                };
+                
+                // Sounds to override found
+                if (footsteps.Count > 0)
+                {
+                    for (int i = 0; i < footsteps.Count; i++)
+                    {
+                        string clipName = $"{footsteps[i]}{i}.wav";
+                        StartCoroutine(LoadAudioClip(footsteps[i], data));
+                    }
+                }
+                else // Use default sounds
+                {
+                    string clipName = $"{mat}.wav";
+                    StartCoroutine(LoadAudioClip(pathToDefaultSounds + clipName, data));
+                }
+                
+                _audioClips.Add(data);
+            }
         }
 
-        private IEnumerator GetAudioClip(string path, string clipName)
+        private IEnumerator LoadAudioClip(string path, AudioData data)
         {
             using (UnityWebRequest www =
                    UnityWebRequest.GetAudioClip(path, AudioType.WAV))
@@ -290,7 +347,7 @@ namespace PlayerFootsteps
                 }
                 else
                 {
-                    _audioClips[clipName] = DownloadHandlerAudioClip.GetContent(www);
+                    data.Clips.Add(DownloadHandlerAudioClip.GetContent(www));
                 }
             }
         }

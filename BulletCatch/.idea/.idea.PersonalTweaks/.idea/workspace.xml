@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb18fbf-e984-42ea-a43f-a99689a454b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BulletCatch/BulletCatch/bin/Debug/BulletCatch.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.PlayerFootsteps/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PlayerSliding/PlayerSliding/bin/Debug/PlayerSliding.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PlayerFootsteps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PlayerFootsteps/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/PlayerFootsteps.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Build/PlayerFootsteps.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/PlayerFootsteps.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/Build/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Build/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/resources/Metal.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Build/resources/Wood.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/PlayerFootsteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/PlayerFootsteps.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/bin/Debug/PlayerFootsteps.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/bin/Debug/PlayerFootsteps.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/bin/Debug/PlayerFootsteps.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/bin/Debug/PlayerFootsteps.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.dll" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/PlayerFootsteps/obj/Debug/PlayerFootsteps.pdb" afterDir="false" />
+    <list default="true" id="03dbac5a-5967-48fe-a095-5e6a80b81a59" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/BulletCatch/bin/Debug/BulletCatch.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlayerFootsteps/.idea/.idea.PlayerFootsteps/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/.idea/.idea.PlayerFootsteps/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/.idea/.idea.PlayerFootsteps/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/PlayerFootsteps.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/PlayerFootsteps.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/bin/Debug/PlayerFootsteps.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/bin/Debug/PlayerFootsteps.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/bin/Debug/PlayerFootsteps.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/bin/Debug/PlayerFootsteps.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../PlayerFootsteps/PlayerFootsteps/obj/Debug/PlayerFootsteps.pdb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +27,7 @@
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/../../UDPServer" value="2966214420508" />
+        <entry key="$USER_HOME$/Desktop/UDPServer" value="2966214420508" />
         <entry key="$USER_HOME$/IdeaProjects/UDPNetwork" value="1483087289240" />
         <entry key="F:/Workplace/ENERGA_SOD_2" value="1516014898478" />
       </map>
@@ -45,19 +37,29 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/PlayerFootsteps/PlayerFootsteps.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0e/41d4452f/BulletImpactSoundType.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/70/31dfad24/GM.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/a7/23497f66/AIManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/23c82cada6174aeea1f2659206cab34d1c600/36/42d455d0/BaseUnityPlugin.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0d/0d18e25a/FVRHandGrabPoint.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0d/91bd1f61/FVRInteractiveObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0e/ef37b160/AttachableBipodInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/0f/f6b1deac/FVRFireArmChamber.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/17/aaee93ef/Revolver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/26/5a3a393d/FVRFireArmRound.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/39/25383569/FireArmRoundType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/3b/d679bdc4/FVRVerticleRope.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/71/035b932a/FireArmRoundClass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/72/4aaa6683/FVRPhysicalObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/b8/6d07b29f/PlayerBackPack.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/e1/0f838002/FVRViveHand.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/e2/c65507c1/FVRQuickBeltSlot.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f2/3c613b44/FVRPlayerBody.cs" root0="SKIP_HIGHLIGHTING" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/f9/ae293643/FVRObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9f09faa1f10b44cd9507e2b22ab830df3c3c00/ff/9e171181/FVRFireArm.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2Mabe48hA9RNBCyn1Er0IE92xGB" />
+  <component name="ProjectId" id="2cucirWpqbQ1DRR1qzBTtCxAYok" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -66,7 +68,6 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -184,52 +185,26 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5fb18fbf-e984-42ea-a43f-a99689a454b6" name="Changes" comment="" />
-      <created>1678008734858</created>
+      <changelist id="03dbac5a-5967-48fe-a095-5e6a80b81a59" name="Changes" comment="" />
+      <created>1708965033784</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678008734858</updated>
-      <workItem from="1678008741805" duration="2504000" />
-      <workItem from="1678026624422" duration="3624000" />
-      <workItem from="1678035715044" duration="4887000" />
-      <workItem from="1678042807892" duration="1219000" />
-      <workItem from="1678045398382" duration="4525000" />
-      <workItem from="1678089052134" duration="1543000" />
-      <workItem from="1678137863609" duration="3688000" />
-      <workItem from="1678214898880" duration="4449000" />
-      <workItem from="1678223010431" duration="2267000" />
-      <workItem from="1678276715537" duration="146000" />
-      <workItem from="1678380562562" duration="1909000" />
-      <workItem from="1678382834253" duration="46000" />
-      <workItem from="1680017213001" duration="3532000" />
-      <workItem from="1680025088442" duration="1780000" />
-      <workItem from="1680117115818" duration="37000" />
-      <workItem from="1680117407191" duration="680000" />
-      <workItem from="1680158379820" duration="561000" />
-      <workItem from="1680192336174" duration="23000" />
-      <workItem from="1680335364913" duration="966000" />
-      <workItem from="1682366823175" duration="865000" />
-      <workItem from="1682451490182" duration="84000" />
-      <workItem from="1682588507267" duration="21000" />
-      <workItem from="1682627507894" duration="499000" />
-      <workItem from="1683113460382" duration="442000" />
-      <workItem from="1683115724907" duration="1537000" />
-      <workItem from="1708966322871" duration="622000" />
-      <workItem from="1709069059311" duration="6000" />
-      <workItem from="1711265056888" duration="2213000" />
-      <workItem from="1714940116388" duration="905000" />
-      <workItem from="1715707898688" duration="176000" />
-      <workItem from="1725782468836" duration="8560000" />
-      <workItem from="1726301026177" duration="228000" />
-      <workItem from="1726417484334" duration="62000" />
+      <updated>1708965033784</updated>
+      <workItem from="1708965035526" duration="3375000" />
+      <workItem from="1709054208691" duration="3462000" />
+      <workItem from="1709067663366" duration="2841000" />
+      <workItem from="1709073960441" duration="72000" />
+      <workItem from="1709139674228" duration="1506000" />
+      <workItem from="1709145070616" duration="1852000" />
+      <workItem from="1709239227528" duration="788000" />
+      <workItem from="1709416509635" duration="487000" />
+      <workItem from="1709676049418" duration="119000" />
+      <workItem from="1714646873939" duration="10000" />
+      <workItem from="1714646892346" duration="139000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsManagerConfiguration">
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
